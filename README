@@ -1,0 +1,28 @@
+# ML-QLearning-CartPole
+
+## Configuração do Ambiente
+
+1. Crie um ambiente virtual:
+   ```bash
+   python3 -m venv venv
+
+2. Ative o ambiente virtual
+    2.1. No Windows
+        ```bash
+        venv\Scripts\activate
+    2.2. No Linux
+        ```bash
+        source venv/bin/activate
+
+3. Instale as dependências
+    ```bash
+    pip install -r requirements.txt
+
+
+    ```bash
+    python treinar.py
+    python jogar.py
+
+A tabela q_table.npy possui os dados já aprendidos.
+
+

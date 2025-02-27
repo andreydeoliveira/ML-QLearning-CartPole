@@ -4,6 +4,10 @@ Este é um projeto de estudo de **Machine Learning** usando **Q-Learning** para 
 
 ---
 
+![alt text](image.png)
+
+---
+
 ## 📚 Descrição do Projeto  
 O objetivo é treinar um agente para equilibrar um pêndulo em um carrinho utilizando **Q-Learning** com discretização de estados.  
 - **Q-Learning:** Algoritmo de aprendizado por reforço baseado em tabela Q.  

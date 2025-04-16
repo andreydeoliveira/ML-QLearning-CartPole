@@ -19,7 +19,8 @@ def discretize_state(state, bins):
     return tuple(new_state)
 
 # Inicializa o ambiente
-env = gym.make('CartPole-v1', render_mode='human')
+# env = gym.make('CartPole-v1', render_mode='human')
+env = gym.make('CartPole-v1', render_mode='rbg_array')
 
 # Inicializa a tabela Q (com tamanho do estado discretizado e 2 ações possíveis)
 q_table = np.zeros([bins] * 4 + [env.action_space.n])
@@ -58,7 +59,7 @@ def train_agent(episodes):
         print(f'Episódio {episode + 1}, Recompensa Total: {total_reward}, Epsilon: {epsilon}')
 
 # Treinamento do agente
-train_agent(1200)  # Treinar por 1000 episódios
+train_agent(20000)  # Treinar por 1000 episódios
 
 # Salvar a tabela Q treinada
 np.save('q_table.npy', q_table)
